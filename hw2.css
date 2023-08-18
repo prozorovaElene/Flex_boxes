@@ -1,0 +1,116 @@
+.box{
+  padding: 1.25% 2.5%;
+  text-align: center;
+  width: 95%;
+  height: 18vh;
+  background-color: gold;
+  border-radius: 10px;
+}
+
+.boxes{
+  display: flex;
+  flex-direction: row;
+  padding: 1.5% 0;
+}
+
+.B0 {
+  display: none;
+  height: 43vh;
+  width: 100%;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.A{
+  text-align: center;
+  height: 43vh;
+  width: 20%;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+.B{
+  margin: 0 1.25%;
+  height: 43vh;
+  width: 60%;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.C{
+  text-align: center;
+  height: 43vh;
+  width: 20%;
+  background-color: green;
+  border-radius: 10px;
+}
+
+.lowerBox{
+  padding: 1.25% 2.5%;
+  text-align: center;
+  width: 95%;
+  height: 10vh;
+  background-color: pink;
+  border-radius: 10px;
+}
+
+.box-text {
+  margin: 0.6rem;
+} 
+
+
+@media (max-width: 800px){
+  .B {
+    display: none;
+  }
+  .B0 {
+    height: 36vh;
+    display: block;
+  }
+  .A {
+    margin-right: 1.25%;
+    width: 50%;
+    height: 16vh;
+  }
+  .C{
+    width: 50%;
+    height: 16vh;
+  }
+  .box{
+    height: 18vh;
+  }
+  .lowerBox{
+    height: 14vh;
+  }
+
+}
+
+@media (max-width: 600px){
+  .boxes{
+    flex-direction: column;
+  }
+  .A {
+    margin-bottom: 1.5%;
+    width: 100%;
+    height: 13vh;
+  }
+  .C{
+    width: 100%;
+    height: 13vh;
+  }
+
+  .box{
+    height: 14vh;
+  }
+  .lowerBox{
+    height: 11vh;
+  }
+  .B {
+    display: none;
+  }
+  .B0 {
+    height: 34vh;
+    display: block;
+  }
+
+}
